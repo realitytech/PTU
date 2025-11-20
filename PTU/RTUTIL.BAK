@@ -1,0 +1,19 @@
+unit rtuitl;
+
+interface
+function uppercase(indata:string):string; { missing delphi uppercase }
+
+implementation
+
+function uppercase(indata:string):string; { missing delphi uppercase }
+var
+   loop : integer;
+   outputstr : string;
+begin
+   outputstr :='';
+   for loop := 1 to length(indata) do
+       outputstr := outputstr + upcase(indata[loop]);
+   uppercase := outputstr;
+end;
+
+end.

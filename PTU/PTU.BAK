@@ -30,14 +30,6 @@ var
 procedure noparams;
 begin
      writeln ('Use: PTU -p:<port> -d:<delay> -1:<value1> -2:<value2> -A -S -R');
-     writeln ('<port> the target port. Decimal or prefix with $ for hex');
-     writeln ('<delay> the delay between writes or reads in mS');
-     writeln ('<value1> The first value to write. Writes 0 if not specified');
-     writeln ('<value2> The second value to write. Writes 0 if not specified');
-     writeln ('-A : Dont show warning');
-     writeln ('-S : Dont update screen, helps stop spurious writes to the bus');
-     writeln ('-R : Read the bus. Displays the result if not used with -s');
-     writeln ('');
 end;
 
 
